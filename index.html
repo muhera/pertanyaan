@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nembak Cewek</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    h1 {
+        color: #333;
+    }
+    p {
+        color: #666;
+        line-height: 1.6;
+    }
+    button {
+        padding: 10px 20px;
+        background-color: #ff4d4d;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    button:hover {
+        background-color: #cc3333;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Assalamualaikum, <span id="girlName">Dede Olif</span>! Aku minta maaf ya Jika aku selalu mengganggu waktumu terus😊</h1>
+    <p>Sebenarnya ada yang ingin kukatakan kepadamu cuma waktu tidak bisa memberikannya😊</p>
+    <button onclick="checkResponse()">Silakan Klik!</button>
+    <p id="response"></p>
+</div>
+
+<script>
+    function checkResponse() {
+        const response = prompt("Aku sebenarnya suka sama kamu apakah kamu mau menerimaku sebagai bagian hidupku? (Ya/Tidak)");
+        if (response.toLowerCase() === "ya") {
+            document.getElementById("response").innerText = "Alhamdulillah, Terima kasih Dedek Olif🥰!! Sangat senang sih dengan kamu menjawab ini❤";
+        } else if (response.toLowerCase() === "tidak") {
+            document.getElementById("response").innerText = "Hehehe... Maafin aku ya udah berharap sama kamu lagi pula kan itu keputusan kamu😊";
+        } else {
+            document.getElementById("response").innerText = "Maaf, Aku tidak mengerti apa yang kamu jawab karena pertanyaannya cuma ada di dalam kurung tersebut😊 'Ya' atau 'Tidak' 😉";
+        }
+    }
+</script>
+</body>
+</html>
